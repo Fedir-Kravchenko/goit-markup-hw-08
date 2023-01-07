@@ -1,5 +1,8 @@
 .advantages {
   padding: 94px 0;
+  @media screen and (min-width: 480px) {
+    padding: 60px 0;
+  }
 }
 
 .advantages__list {
@@ -8,11 +11,13 @@
 }
 
 .advantages__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  width: 100%;
 
-  &:nth-child(4n) {
-    margin-right: 0;
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
   }
 
   .advantages__title {
@@ -23,8 +28,17 @@
 .advantages__icon {
   @extend %flex-align;
   justify-content: center;
-  margin-bottom: 30px;
-  height: 120px;
-  border-radius: 4px;
+
   background-color: #f5f4fa;
+
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
+  }
 }

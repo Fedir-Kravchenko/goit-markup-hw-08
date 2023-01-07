@@ -62,7 +62,12 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
 }
 
 .backdrop {
@@ -218,6 +223,11 @@ img {
 .advantages {
   padding: 94px 0;
 }
+@media screen and (min-width: 480px) {
+  .advantages {
+    padding: 60px 0;
+  }
+}
 
 .advantages__list {
   display: flex;
@@ -225,11 +235,17 @@ img {
 }
 
 .advantages__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  width: 100%;
 }
-.advantages__item:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .advantages__item .advantages__title {
   margin-bottom: 10px;
@@ -237,10 +253,21 @@ img {
 
 .advantages__icon {
   justify-content: center;
-  margin-bottom: 30px;
-  height: 120px;
-  border-radius: 4px;
   background-color: #f5f4fa;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__icon {
+    width: 270px;
+  }
 }
 
 .thamb-work {
