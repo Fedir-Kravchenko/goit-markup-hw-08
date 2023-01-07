@@ -223,11 +223,6 @@ img {
 .advantages {
   padding: 94px 0;
 }
-@media screen and (min-width: 480px) {
-  .advantages {
-    padding: 60px 0;
-  }
-}
 
 .advantages__list {
   display: flex;
@@ -249,6 +244,11 @@ img {
 }
 .advantages__item .advantages__title {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .advantages__item .advantages__title {
+    text-align: center;
+  }
 }
 
 .advantages__icon {

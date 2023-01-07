@@ -1,8 +1,8 @@
 .advantages {
   padding: 94px 0;
-  @media screen and (min-width: 480px) {
-    padding: 60px 0;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding: 60px 0;
+  // }
 }
 
 .advantages__list {
@@ -22,6 +22,9 @@
 
   .advantages__title {
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 }
 
