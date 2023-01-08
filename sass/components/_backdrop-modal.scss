@@ -52,6 +52,11 @@
     line-height: calc(30 / 20);
     letter-spacing: 0.03em;
   }
+  @include tablet {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    letter-spacing: 0.03em;
+  }
 }
 .modal-form__container {
   margin-bottom: 10px;
