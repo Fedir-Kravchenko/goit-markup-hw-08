@@ -40,6 +40,9 @@
 
   @include font(20px, 700, 1.15, 0.03em);
 
+  @media screen {
+  }
+
   text-align: center;
   color: #212121;
 }
