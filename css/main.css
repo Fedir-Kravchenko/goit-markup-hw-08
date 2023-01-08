@@ -1260,6 +1260,13 @@ ul {
   color: #212121;
   margin: 0 0 12px;
 }
+@media screen and (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
 
 .modal-form__container {
   margin-bottom: 10px;
@@ -1501,11 +1508,8 @@ ul {
   font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mob-contact__tel:hover, .mob-contact__tel:focus {
-  color: #2196F3;
 }
 
 .mob-contact__mail {
@@ -1536,7 +1540,7 @@ ul {
   font-size: 14px;
   line-height: 1.5714285714;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 @media screen and (min-width: 480px) {
   .mob-social__link {
