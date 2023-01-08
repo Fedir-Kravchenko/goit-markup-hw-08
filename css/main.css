@@ -637,6 +637,10 @@ ul {
   }
 }
 
+.header-contact__list .header-contact__item + .header-contact__item {
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 1200px) {
   .header-contact__list .header-contact__item + .header-contact__item {
     margin-left: 50px;
@@ -650,7 +654,7 @@ ul {
 }
 
 .header-contact__mail {
-  display: inline-flex;
+  display: flex;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -670,7 +674,7 @@ ul {
 }
 
 .header-contact__tel {
-  display: inline-flex;
+  display: flex;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
